@@ -115,7 +115,32 @@ aside h3{
     transform: translate(-50%, -50%);
     text-align: center;
     user-select: none;
-  }
+}
+label{
+    display: inline-block;
+    padding: 10px;
+}
+.col-25,
+.col-75{
+    margin-top: 5px;
+    float: left;
+}
+.col-25{
+    width: 25%;
+}
+.col-75{    
+    width: 75%;
+}
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 90%;
+    padding: 10px;
+}
+textarea{
+    height: 200px;
+}
 footer{
     grid-area: footer;
     background-color: #1E80C6;
@@ -168,5 +193,11 @@ footer a:hover{
     }
     .img-container{
         display: none;
+    }
+    .col-25,
+    .col-75,
+    input[type=text],
+    input[type=email]{
+        width: 100%;
     }
 }

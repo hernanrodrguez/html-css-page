@@ -20,43 +20,46 @@
         <a href="#">Contactanos</a>
     </nav>
     <main>
-        <!-- <h2>Dejanos tu consulta</h2>
+        <h2>Dejanos tu consulta</h2>
         <form action="show_data.html">
-            <p>
+            <div class="col-25">
                 <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" placeholder="Ingrese su nombre...">
-            </p>
-            <p>
+            </div>
+            <div class="col-75">
+                <input type="text" name="name" id="name" placeholder="Ingrese su nombre...">
+            </div>         
+            <div class="col-25">
                 <label for="surname">Apellido:</label>
-                <input type="text" id="surname" name="surname" placeholder="Ingrese su apellido...">
-            </p>
-            <p>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="ejemplo@mail.com">
-            </p>
-            <p>Género:
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Masculino</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Femenino</label>
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Otro</label>
-            </p>
-            <p>Deseo suscribirme a:
-                <input type="checkbox" id="recipes" name="recipes" value="recipes">
-                <label for="recipes"> Nuevas Recetas</label>
-                <input type="checkbox" id="products" name="products" value="products">
-                <label for="products"> Nuevos Productos</label>
-                <input type="checkbox" id="news" name="news" value="news">
-                <label for="news"> Notificaciones semanales</label>
-            </p>
-            <p>
-                <label for="message">Consulta:</label><br><br>
-                <textarea id="message" name="message" rows="15" cols="100"
-                    placeholder="Escriba su consulta aqui..."></textarea>
-            </p>
-            <input type="submit" value="Enviar Consulta"><br><br>
-        </form> -->
+            </div>
+            <div class="col-75">
+                <input type="text" name="surname" id="surname" placeholder="Ingrese su apellido...">
+            </div> 
+            <div class="col-25">
+                <label for="email">E-Mail:</label>
+            </div>
+            <div class="col-75">
+                <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico...">
+            </div>        
+            <div class="col-25">
+                <label for="subject">Asunto:</label>
+            </div>
+            <div class="col-75">
+                <select id="subject" name="subject">
+                    <option value="buy">Quiero comprar el producto</option>
+                    <option value="info">Quiero recibir más información del producto</option>
+                    <option value="join">Quiero unirme al equipo</option>
+                    <option value="other">Otro...</option>
+                  </select>
+            </div>
+            <div class="col-25">
+                <label for="message">Mensaje:</label>
+              </div>
+              <div class="col-75">
+                <textarea id="message" name="message" placeholder="Deje su mensaje aquí..."></textarea>
+              </div>
+            
+
+        </form>
     </main>
     <aside>
         <h3>Cartelera de Novedades</h3>
