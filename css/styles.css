@@ -132,6 +132,7 @@ aside h3{
 }
 input[type=text],
 input[type=email],
+input[type=password],
 select,
 textarea{
     width: 100%;
@@ -142,13 +143,14 @@ textarea{
 }
 input[type=text]:focus,
 input[type=email]:focus,
+input[type=password],
 textarea {
     border: 1px solid #1E80C6;
 }
 textarea{
     height: 200px;
 }
-.submit{
+.right{
     margin: 0px 10px;
     justify-content: right;
 }
@@ -166,6 +168,9 @@ input[type=submit]{
 input[type=submit]:hover{
     transition: all 0.2s ease-in;
     background-color: #293e93;
+}
+input[type=checkbox]{
+    margin-left: 5px;
 }
 footer{
     grid-area: footer;
@@ -228,7 +233,7 @@ footer a:hover{
     .label{
         padding: 2px;
     }
-    .submit{
+    .right{
         margin: 0;
     }
 }
