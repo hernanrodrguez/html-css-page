@@ -22,43 +22,55 @@
     <main>
         <h2>Dejanos tu consulta</h2>
         <form action="show_data.html">
-            <div class="col-25">
-                <label for="name">Nombre:</label>
+            <div class="row">
+                <div class="label">
+                    <label for="name">Nombre:</label>
+                </div>
+                <div class="field">
+                    <input type="text" name="name" id="name" placeholder="Ingrese su nombre...">
+                </div>
             </div>
-            <div class="col-75">
-                <input type="text" name="name" id="name" placeholder="Ingrese su nombre...">
-            </div>         
-            <div class="col-25">
-                <label for="surname">Apellido:</label>
+            <div class="row">
+                <div class="label">
+                    <label for="surname">Apellido:</label>
+                </div>
+                <div class="field">
+                    <input type="text" name="surname" id="surname" placeholder="Ingrese su apellido...">
+                </div> 
             </div>
-            <div class="col-75">
-                <input type="text" name="surname" id="surname" placeholder="Ingrese su apellido...">
-            </div> 
-            <div class="col-25">
-                <label for="email">E-Mail:</label>
+            <div class="row">
+                <div class="label">
+                    <label for="email">E-Mail:</label>
+                </div>
+                <div class="field">
+                    <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico...">
+                </div>  
             </div>
-            <div class="col-75">
-                <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico...">
-            </div>        
-            <div class="col-25">
-                <label for="subject">Asunto:</label>
+            <div class="row">
+                <div class="label">
+                    <label for="subject">Asunto:</label>
+                </div>
+                <div class="field">
+                    <select id="subject" name="subject">
+                        <option value="null">Elija un asunto...</option>
+                        <option value="buy">Quiero comprar el producto</option>
+                        <option value="info">Quiero recibir más información del producto</option>
+                        <option value="join">Quiero unirme al equipo</option>
+                        <option value="other">Otro...</option>
+                      </select> 
+                </div>
             </div>
-            <div class="col-75">
-                <select id="subject" name="subject">
-                    <option value="buy">Quiero comprar el producto</option>
-                    <option value="info">Quiero recibir más información del producto</option>
-                    <option value="join">Quiero unirme al equipo</option>
-                    <option value="other">Otro...</option>
-                  </select>
+            <div class="row">
+                <div class="label message">
+                    <label for="message">Mensaje:</label>
+                  </div>
+                  <div class="field">
+                    <textarea id="message" name="message" placeholder="Deje su mensaje aquí..."></textarea>
+                  </div>
             </div>
-            <div class="col-25">
-                <label for="message">Mensaje:</label>
-              </div>
-              <div class="col-75">
-                <textarea id="message" name="message" placeholder="Deje su mensaje aquí..."></textarea>
-              </div>
-            
-
+            <div class="row submit">
+                <input type="submit" value="Enviar">
+            </div>
         </form>
     </main>
     <aside>
