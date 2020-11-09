@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <title>Laennec</title>
 </head>
 <body>
@@ -21,54 +22,20 @@
         <a href="login.html">Ingresa al Portal</a>
     </nav>
     <main>
-        <div class="person">
-            <div class="img-container">
-                <img src="img/avatar.png" alt="avatar">
-                <div class="img-overlay">
-                    <div class="img-text">John Doe</div>
-                </div>
-            </div>            
-            <div class="person-info">
-                <h3>John Doe</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At corrupti, ullam quo ducimus doloribus expedita labore dolorum molestiae tenetur, hic voluptatem, voluptas odio aliquid vero totam perferendis quam animi consectetur?</p>
-            </div>
-        </div>
-        <div class="person">
-            <div class="img-container">
-                <img src="img/avatar_2.png" alt="avatar">
-                <div class="img-overlay">
-                    <div class="img-text">Sally Housecoat</div>
+        <div id="app">
+            <div class="person" v-for="employee in staff">
+                <div class="img-container">
+                    <img :src="employee.img" alt="avatar">
+                    <div class="img-overlay">
+                        <div class="img-text">{{employee.name}}</div>
+                    </div>
+                </div>            
+                <div class="person-info">
+                    <h3>{{employee.name}}</h3>
+                    <p>{{employee.desc}}</p>
                 </div>
             </div>
-            <div class="person-info">
-                <h3>Sally Housecoat</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At corrupti, ullam quo ducimus doloribus expedita labore dolorum molestiae tenetur, hic voluptatem, voluptas odio aliquid vero totam perferendis quam animi consectetur?</p>
-            </div>
-        </div>
-        <div class="person">
-            <div class="img-container">
-                <img src="img/avatar_3.png" alt="avatar">
-                <div class="img-overlay">
-                    <div class="img-text">Joe Smith</div>
-                </div>
-            </div>            
-            <div class="person-info">
-                <h3>Joe Smith</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At corrupti, ullam quo ducimus doloribus expedita labore dolorum molestiae tenetur, hic voluptatem, voluptas odio aliquid vero totam perferendis quam animi consectetur?</p>
-            </div>
-        </div>
-        <div class="person">
-            <div class="img-container">
-                <img src="img/avatar_4.png" alt="avatar">
-                <div class="img-overlay">
-                    <div class="img-text">Jane Johnson</div>
-                </div>
-            </div>            
-            <div class="person-info">
-                <h3>Jane Johnson</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At corrupti, ullam quo ducimus doloribus expedita labore dolorum molestiae tenetur, hic voluptatem, voluptas odio aliquid vero totam perferendis quam animi consectetur?</p>
-            </div>
-        </div>       
+        </div>   
     </main>
     <aside>
         <h3>Cartelera de Novedades</h3>
@@ -92,5 +59,6 @@
             <a href="https://ar.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
         </div>
     </footer>
+    <script src="js/about.js"></script>
 </body>
 </html>
