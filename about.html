@@ -39,14 +39,10 @@
     </main>
     <aside>
         <h3>Cartelera de Novedades</h3>
-            <div class="novedades">
-                <div class="novedad">
-                    <h4>Novedad 1</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptatum, molestias nihil animi recusandae beatae ullam fuga culpa harum suscipit a autem consequuntur deserunt ut dolore saepe. Eligendi, at eum!</p>
-                </div>
-                <div class="novedad">
-                <h4>Novedad 2</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptatum, molestias nihil animi recusandae beatae ullam fuga culpa harum suscipit a autem consequuntur deserunt ut dolore saepe. Eligendi, at eum!</p>
+        <div id="novedades" class="novedades">
+            <div class="novedad" v-for="novedad in novedades">
+                <h4>{{novedad.title}}</h4>
+                <p>{{novedad.body}}</p>
             </div>
         </div>
     </aside>
@@ -60,5 +56,6 @@
         </div>
     </footer>
     <script src="js/about.js"></script>
+    <script src="js/news.js"></script>
 </body>
 </html>
