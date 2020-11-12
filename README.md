@@ -9,3 +9,4 @@
 - Google Fonts
 - CSS Transitions
 - Flexbox and Grid usage
+- Vue.js usage for dinamic load of some data
